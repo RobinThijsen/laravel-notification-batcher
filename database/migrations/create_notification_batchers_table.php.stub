@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('notification_batchers', function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->morphs('notifiable'); // change to uuidMorphs('notifiable') if your Batchable model uses uuids
+            $table->string('batch_class');
+            $table->string('status')->default(\OANNA\NotificationBatcher\Enums\NotificationBatcherStatus::WAITING);
+            $table->integer('count')->default(1);
+            $table->mediumText('payload');
+            $table->timestamp('started_at')->nullable();
+            $table->timestamp('processed_at')->nullable();
+            $table->timestamp('failed_at')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('notification_batchers');
+    }
+};

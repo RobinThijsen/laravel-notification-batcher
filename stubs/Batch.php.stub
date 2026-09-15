@@ -1,0 +1,32 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ className }}
+{
+    protected $delay = null;
+
+    protected $queue = null;
+
+    /**
+     * Create a new batch instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Execute the batch
+     *
+     * @param \Illuminate\Database\Eloquent\Model $notifiable
+     * @param \OANNA\NotificationBatcher\Models\NotificationBatcher $notificationBatcher
+     * @return void
+     */
+    public function handle($notifiable, $notificationBatcher)
+    {
+        //
+    }
+}

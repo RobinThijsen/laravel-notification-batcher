@@ -1,0 +1,19 @@
+.idea
+.DS_Store
+
+# claude
+CLAUDE.md
+.claude/
+
+# tests
+tests/
+workbench/
+testbench.yaml
+
+# dev
+AUDIT.md
+FIX.md
+composer.lock
+vendor
+
+configure.php
