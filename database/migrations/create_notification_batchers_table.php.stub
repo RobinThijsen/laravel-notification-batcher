@@ -12,7 +12,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->morphs('notifiable'); // change to uuidMorphs('notifiable') if your Batchable model uses uuids
             $table->string('batch_class');
-            $table->string('status')->default(\OANNA\NotificationBatcher\Enums\NotificationBatcherStatus::WAITING);
+            $table->string('status')->default(\RobinThijsen\NotificationBatcher\Enums\NotificationBatcherStatus::WAITING);
             $table->integer('count')->default(1);
             $table->mediumText('payload');
             $table->timestamp('started_at')->nullable();

@@ -1,8 +1,8 @@
 <?php
 
-namespace OANNA\NotificationBatcher;
+namespace RobinThijsen\NotificationBatcher;
 
-use OANNA\NotificationBatcher\Commands\MakeBatchClass;
+use RobinThijsen\NotificationBatcher\Commands\MakeBatchClass;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

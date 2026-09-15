@@ -1,6 +1,6 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Concerns;
+namespace RobinThijsen\NotificationBatcher\Concerns;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

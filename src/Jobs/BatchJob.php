@@ -1,13 +1,13 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Jobs;
+namespace RobinThijsen\NotificationBatcher\Jobs;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Queue\SerializesModels;
 
-use OANNA\NotificationBatcher\Models\NotificationBatcher;
+use RobinThijsen\NotificationBatcher\Models\NotificationBatcher;
 
 class BatchJob implements ShouldQueue
 {

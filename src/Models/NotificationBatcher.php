@@ -1,11 +1,11 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Models;
+namespace RobinThijsen\NotificationBatcher\Models;
 
 use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Model;
-use OANNA\NotificationBatcher\Enums\NotificationBatcherStatus;
+use RobinThijsen\NotificationBatcher\Enums\NotificationBatcherStatus;
 
 /**
  * @property string $id

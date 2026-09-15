@@ -1,10 +1,10 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Concerns;
+namespace RobinThijsen\NotificationBatcher\Concerns;
 
 use Carbon\CarbonInterval;
-use OANNA\NotificationBatcher\Facades\Batch;
-use OANNA\NotificationBatcher\Models\NotificationBatcher;
+use RobinThijsen\NotificationBatcher\Facades\Batch;
+use RobinThijsen\NotificationBatcher\Models\NotificationBatcher;
 
 trait Batchable
 {

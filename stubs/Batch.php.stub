@@ -22,7 +22,7 @@ class {{ className }}
      * Execute the batch
      *
      * @param \Illuminate\Database\Eloquent\Model $notifiable
-     * @param \OANNA\NotificationBatcher\Models\NotificationBatcher $notificationBatcher
+     * @param \RobinThijsen\NotificationBatcher\Models\NotificationBatcher $notificationBatcher
      * @return void
      */
     public function handle($notifiable, $notificationBatcher)

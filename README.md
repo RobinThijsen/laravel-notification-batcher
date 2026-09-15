@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-composer require oanna/laravel-notification-batcher
+composer require robinthijsen/laravel-notification-batcher
 ```
 
 Then run the installation command:
@@ -35,7 +35,7 @@ When `notifyBatch()` is called for the first time for a given notifiable + batch
 ### 1. Add the trait to your notifiable model
 
 ```php
-use OANNA\NotificationBatcher\Concerns\Batchable;
+use Robinthijsen\NotificationBatcher\Concerns\Batchable;
 
 class User extends Authenticatable
 {
@@ -56,7 +56,7 @@ The generated class has a `handle()` method that receives the notifiable and the
 
 namespace App\Batches;
 
-use OANNA\NotificationBatcher\Models\NotificationBatcher;
+use Robinthijsen\NotificationBatcher\Models\NotificationBatcher;
 
 class NewMessageBatch
 {
@@ -82,7 +82,7 @@ class NewMessageBatch
 ### 3. Send a batch notification
 
 ```php
-use OANNA\NotificationBatcher\Facades\Batch;
+use Robinthijsen\NotificationBatcher\Facades\Batch;
 
 $user->notifyBatch(new NewMessageBatch());
 

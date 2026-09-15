@@ -1,6 +1,6 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Enums;
+namespace RobinThijsen\NotificationBatcher\Enums;
 
 enum NotificationBatcherStatus: string
 {

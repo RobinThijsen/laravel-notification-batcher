@@ -1,8 +1,8 @@
 <?php
 
-namespace OANNA\NotificationBatcher;
+namespace RobinThijsen\NotificationBatcher;
 
-use OANNA\NotificationBatcher\Jobs\BatchJob;
+use RobinThijsen\NotificationBatcher\Jobs\BatchJob;
 
 class PendingBatch
 {

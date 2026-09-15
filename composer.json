@@ -1,19 +1,18 @@
 {
-    "name": "oanna/laravel-notification-batcher",
+    "name": "robinthijsen/laravel-notification-batcher",
     "description": "A Laravel package to simplify batching notifications.",
     "keywords": [
-        "oanna",
         "laravel",
         "notifications",
         "batches",
         "batcher"
     ],
-    "homepage": "https://github.com/oanna/laravel-notification-batcher",
+    "homepage": "https://github.com/RobinThijsen/laravel-notification-batcher",
     "license": "MIT",
     "authors": [
         {
             "name": "Robin Thijsen",
-            "email": "robin@oanna.be",
+            "email": "robinthijsen@pm.me",
             "role": "Developer"
         }
     ],
@@ -38,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "OANNA\\NotificationBatcher\\": "src/",
-            "OANNA\\NotificationBatcher\\Database\\Factories\\": "database/factories/"
+            "Robinthijsen\\NotificationBatcher\\": "src/",
+            "Robinthijsen\\NotificationBatcher\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OANNA\\NotificationBatcher\\Tests\\": "tests/",
+            "Robinthijsen\\NotificationBatcher\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
@@ -83,10 +82,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OANNA\\NotificationBatcher\\NotificationBatcherServiceProvider"
+                "Robinthijsen\\NotificationBatcher\\NotificationBatcherServiceProvider"
             ],
             "aliases": {
-                "Batch": "OANNA\\NotificationBatcher\\Facades\\Batch"
+                "Batch": "Robinthijsen\\NotificationBatcher\\Facades\\Batch"
             }
         }
     },

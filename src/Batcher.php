@@ -1,6 +1,6 @@
 <?php
 
-namespace OANNA\NotificationBatcher;
+namespace RobinThijsen\NotificationBatcher;
 
 use Carbon\CarbonInterface;
 use Carbon\CarbonInterval;

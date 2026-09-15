@@ -1,12 +1,12 @@
 <?php
 
-namespace OANNA\NotificationBatcher\Commands;
+namespace RobinThijsen\NotificationBatcher\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use OANNA\NotificationBatcher\Concerns\CommandHelper;
-use OANNA\NotificationBatcher\Batcher;
+use RobinThijsen\NotificationBatcher\Concerns\CommandHelper;
+use RobinThijsen\NotificationBatcher\Batcher;
 use function Laravel\Prompts\text;
 
 class MakeBatchClass extends Command
